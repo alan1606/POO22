@@ -3,14 +3,18 @@ public class Main {
 	public static void main
 	(String[] args) 
 	{
-		Coffee coffee = new Coffee();
-		//Attr
-		coffee.blend = "Arabic";
-		coffee.brand = "Estarbuks";
-		coffee.color = "Brown";
-		coffee.isEmpty = true;
-		coffee.sugar = 10;
-		coffee.toast = "Dark";
+		Coffee coffee = 
+		new Coffee(
+				"Brown", 
+				"Dark",
+				"Starb", 
+				"Arabic",
+				false,
+				10);
+		
+		System.out.println(coffee.color);
+		
+		Coffee c2 = new Coffee("Gila");
 		
 		//Methods
 		coffee.drink();

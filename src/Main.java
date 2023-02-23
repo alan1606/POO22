@@ -1,34 +1,57 @@
+class Persona{
+	String nombre;
+	String sexo;
+	Integer edad;
+	
+	void respirar() {
+		System.out.println
+		("La persona respira");
+	}
+	
+	void comer() {
+		System.out.println
+		("La persona come");
+	}
+	
+	void dormir() {
+		System.out.println
+		("La persona duerme");
+	}
+}
+
+class Alumno extends Persona{
+	String uniforme;
+	String matricula;
+	String carrera;
+	
+	void estudiar() {
+		System.out.println
+		("El alumno estudia");
+	}
+	void tomarClase() {
+		System.out.println
+		("El alumno toma clase");
+	}
+}
+
+class Profesor extends Persona{
+	String matricula;
+	String rfc;
+	Double salario;
+	
+	void darClases() {
+		System.out.println
+		("El profesor da clases");
+	}
+}
 
 public class Main {
-	public static void main
-	(String[] args) 
-	{
-		Coffee coffee = 
-		new Coffee(
-				"Brown", 
-				"Dark",
-				"Starb", 
-				"Arabic",
-				false,
-				10);
+	public static void main(String[] args) {
+		Persona persona = new Persona();
+		Alumno alumno = new Alumno();
+		Profesor profesor = new Profesor();
 		
-		System.out.println(coffee.color);
-		
-		Coffee c2 = new Coffee("Gila");
-		
-		//Methods
-		coffee.drink();
-		coffee.refill();
-		coffee.addSugar(10);
-		
-		System.out.println(coffee.sugar);
-		
-		if(coffee.isEmpty) {
-			coffee.refill();
-		}
-		else {
-			coffee.drink();
-		}
-		
+		alumno.respirar();
+		alumno.nombre = "Said";
 	}
 }

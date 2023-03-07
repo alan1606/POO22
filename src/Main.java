@@ -80,6 +80,12 @@ class Alumno extends Persona{
 				matricula,
 				carrera);
 	}
+	
+
+	@Override
+	public void dormir() {
+		System.out.println("El alumno no duerme");
+	}
 }
 
 class Profesor extends Persona{
@@ -115,6 +121,7 @@ class Profesor extends Persona{
 				rfc,
 				salario);
 	}
+	
 }
 
 public class Main {
@@ -142,5 +149,6 @@ public class Main {
 		//alumno.respirar();
 		
 		System.out.println(profesor);
+		alumno.dormir();
 	}
 }

@@ -1,6 +1,6 @@
 package figuras;
 
-public class Figura {
+public abstract class Figura {
 	private String color;
 
 	//Constructor
@@ -8,13 +8,9 @@ public class Figura {
 			this.color = color;
 	}
 
-	public double calcularArea() {
-		return 0;
-	}
+	public abstract double calcularArea();
 	
-	public double calcularPerimetro() {
-		return 0;
-	}
+	public abstract double calcularPerimetro();
 	
 	public String getColor() {
 		return color;
